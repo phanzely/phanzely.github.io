@@ -1,0 +1,95 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 60%;
+  /*margin: 20px;*/
+}
+
+section {
+  background-color: #fafafa;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 30%;
+  margin: auto;
+}
+
+section h2 {
+  margin: 0;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.spin {
+  animation: spin 25s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.transparent {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.08;  /* Make the image transparent */
+  z-index: -1;  /* Place the image behind all other elements */
+}
+
+/* use the "big" class to target the image */
+.big {
+  width: 700px;
+  height: 700px;
+  margin: auto;
+}
