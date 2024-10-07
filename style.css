@@ -17,8 +17,17 @@ body {
 header {
   background-color: #222;
   color: white;
-  padding: 60px 0;
-  text-align: center;
+  padding: 40px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-text {
+  flex: 1;
 }
 
 header h1 {
@@ -30,6 +39,13 @@ header h1 {
   font-size: 1.2rem;
   color: #ccc;
   margin-top: 10px;
+}
+
+.header-image img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  margin-left: 30px;
 }
 
 nav {
@@ -122,4 +138,39 @@ figure {
 }
 
 figcaption {
-  font
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-image {
+    margin-top: 20px;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+}
