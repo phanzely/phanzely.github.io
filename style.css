@@ -1,21 +1,45 @@
+/* General Styling */
 body {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 header {
-  background-color: #333;
+  background-color: #222;
   color: white;
-  padding: 20px;
+  padding: 60px 0;
   text-align: center;
 }
 
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.subheader {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-top: 10px;
+}
+
 nav {
-  background-color: #eee;
+  background-color: #444;
+}
+
+nav .container {
   display: flex;
   justify-content: center;
-  padding: 40px;
+  padding: 20px 0;
 }
 
 nav ul {
@@ -26,70 +50,76 @@ nav ul {
 }
 
 nav li {
-  margin: 0 10px;
+  margin: 0 15px;
 }
 
 nav a {
-  color: #333;
+  color: white;
   text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: #f1c40f;
+  transition: color 0.3s ease;
 }
 
 main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 80%;
-  height: 60%;
-  /*margin: 20px;*/
+  padding: 40px 0;
 }
 
 section {
-  background-color: #fafafa;
-  border: 1px solid #eee;
-  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
-  padding: 20px;
-  width: 30%;
-  margin: auto;
+  margin-bottom: 60px;
 }
 
 section h2 {
-  margin: 0;
+  font-size: 2rem;
+  border-bottom: 2px solid #444;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+p {
+  color: #555;
+  font-size: 1.1rem;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
 }
 
 footer {
-  background-color: #333;
+  background-color: #222;
   color: white;
-  padding: 20px;
+  text-align: center;
+  padding: 40px 0;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Image Styling */
+img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+figure {
+  margin-top: 20px;
   text-align: center;
 }
 
-.spin {
-  animation: spin 25s linear infinite;
-  margin: auto;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.transparent {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0.08;  /* Make the image transparent */
-  z-index: -1;  /* Place the image behind all other elements */
-}
-
-/* use the "big" class to target the image */
-.big {
-  width: 700px;
-  height: 700px;
-  margin: auto;
-}
+figcaption {
+  font
