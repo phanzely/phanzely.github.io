@@ -58,13 +58,15 @@
     h2 { color: #c00000; font-size: 2rem; margin-bottom: 20px; width: 100%; }
     p, li { color: #ddd; font-size: 1.1rem; }
 
-    #about img { max-width: 300px; border-radius: 10px; margin-left: 40px; }
+    #about { flex-direction: row; }
+    #about .about-text { flex: 1; min-width: 300px; padding-right: 40px; }
+    #about img { flex: 1; max-width: 350px; border-radius: 10px; }
 
     .project-card {
       background: #1c1c1c; padding: 20px; border-radius: 10px; margin: 20px 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; transition: transform 0.3s, box-shadow 0.3s; width: 100%;
     }
     .project-card:hover { transform: translateY(-5px); box-shadow: 0 0 15px #c00000; }
-    .project-info { flex: 1; min-width: 250px; }
+    .project-info { flex: 1; min-width: 250px; padding-right: 20px; }
     .project-media { flex: 1; min-width: 250px; display: flex; justify-content: center; }
     .project-media img, .project-media video { max-width: 100%; border-radius: 8px; }
 
@@ -78,7 +80,8 @@
       nav ul { flex-direction: column; }
       nav li { margin: 10px 0; }
       section { flex-direction: column; text-align: center; }
-      #about img { margin: 20px 0 0; }
+      #about .about-text { padding-right: 0; }
+      #about img { margin-top: 20px; }
     }
   </style>
   <script>
@@ -125,7 +128,7 @@
         <h3>Pac-Man Maze Solver (AI)</h3>
         <p>Built using A* search and heuristics to autonomously solve dynamic mazes for a course project.</p>
       </div>
-      <div class="project-media"><img src="placeholder1.jpg" alt="Pac-Man Project"></div>
+      <div class="project-media"><video src="pacman_3.mp4" autoplay loop muted playsinline></video></div>
     </div>
     <div class="project-card">
       <div class="project-info">
@@ -139,7 +142,7 @@
         <h3>Blackjack Analyzer (Raspberry Pi)</h3>
         <p>Created a Raspberry Pi camera system using YOLO to identify cards, track game state, and run basic strategy.</p>
       </div>
-      <div class="project-media"><video src="placeholder3.mp4" autoplay loop muted></video></div>
+      <div class="project-media"><video src="placeholder3.mp4" autoplay loop muted playsinline></video></div>
     </div>
   </section>
 
