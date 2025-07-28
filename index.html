@@ -62,12 +62,35 @@
     #about .about-text { flex: 1; min-width: 300px; padding-right: 40px; }
     #about img { flex: 1; max-width: 350px; border-radius: 10px; }
 
-    .project-card {
-      background: #1c1c1c; padding: 20px; border-radius: 10px; margin: 20px 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; transition: transform 0.3s, box-shadow 0.3s; width: 100%;
+    .project-link {
+      text-decoration: none;
+      display: block;
+      color: inherit;
     }
-    .project-card:hover { transform: translateY(-5px); box-shadow: 0 0 15px #c00000; }
+    .project-link:hover {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .project-card {
+      background: #1c1c1c;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      transition: transform 0.3s, box-shadow 0.3s;
+      width: 100%;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px #c00000;
+    }
     .project-info { flex: 1; min-width: 250px; padding-right: 20px; }
     .project-media { flex: 1; min-width: 250px; display: flex; justify-content: center; }
+    .project-card h3, .project-card p { color: #f5f5f5; }
     .project-media img, .project-media video { max-width: 100%; border-radius: 8px; }
 
     footer { text-align: center; padding: 40px; background: #111; color: #666; border-top: 1px solid #333; }
@@ -123,53 +146,55 @@
 
   <section id="projects">
     <h2>Featured Projects</h2>
-<a href="carmatch.html" class="project-link">
-  <div class="project-card">
-    <div class="project-info">
-      <h3>Kai x Car Match (Cornell CS4300)</h3>
-      <p>Built a full-stack car matching system using MySQL for structured data, cosine similarity and SVD for free-text car descriptions, and scraped reviews/social info to improve search relevance.</p>
-    </div>
-    <div class="project-media">
-      <video src="carmatch.mp4" autoplay loop muted playsinline></video>
-    </div>
-  </div>
-</a>
 
-<a href="blackjack.html" class="project-link">
-  <div class="project-card">
-    <div class="project-info">
-      <h3>Blackjack Analyzer (Raspberry Pi)</h3>
-      <p>Created a Raspberry Pi camera system using YOLO to identify cards, track game state, and run basic strategy for real-time analysis.</p>
-    </div>
-    <div class="project-media">
-      <video src="IMG_4054.mp4" autoplay loop muted playsinline></video>
-    </div>
-  </div>
-</a>
+    <a href="carmatch.html" class="project-link">
+      <div class="project-card">
+        <div class="project-info">
+          <h3>Kai x Car Match (Cornell CS4300)</h3>
+          <p>Built a full-stack car matching system using MySQL for structured data, cosine similarity and SVD for free-text car descriptions, and scraped reviews/social info to improve search relevance.</p>
+        </div>
+        <div class="project-media">
+          <video src="carmatch.mp4" autoplay loop muted playsinline></video>
+        </div>
+      </div>
+    </a>
 
-<a href="pacman.html" class="project-link">
-  <div class="project-card">
-    <div class="project-info">
-      <h3>Pac-Man Maze Solver (AI)</h3>
-      <p>Built using A* search and heuristics to autonomously solve dynamic mazes for a course project, visualizing AI pathfinding.</p>
-    </div>
-    <div class="project-media">
-      <video src="pacman_3.mp4" autoplay loop muted playsinline></video>
-    </div>
-  </div>
-</a>
+    <a href="blackjack.html" class="project-link">
+      <div class="project-card">
+        <div class="project-info">
+          <h3>Blackjack Analyzer (Raspberry Pi)</h3>
+          <p>Created a Raspberry Pi camera system using YOLO to identify cards, track game state, and run basic strategy for real-time analysis.</p>
+        </div>
+        <div class="project-media">
+          <video src="IMG_4054.mp4" autoplay loop muted playsinline></video>
+        </div>
+      </div>
+    </a>
 
-<a href="poker.html" class="project-link">
-  <div class="project-card">
-    <div class="project-info">
-      <h3>Poker Analyzer (Simulation)</h3>
-      <p>Developed a poker hand tracking and odds calculator using computer vision and probability simulation, designed for training scenarios.</p>
-    </div>
-    <div class="project-media">
-      <video src="poker_3.mp4" autoplay loop muted playsinline></video>
-    </div>
-  </div>
-</a>
+    <a href="pacman.html" class="project-link">
+      <div class="project-card">
+        <div class="project-info">
+          <h3>Pac-Man Maze Solver (AI)</h3>
+          <p>Built using A* search and heuristics to autonomously solve dynamic mazes for a course project, visualizing AI pathfinding.</p>
+        </div>
+        <div class="project-media">
+          <video src="pacman_3.mp4" autoplay loop muted playsinline></video>
+        </div>
+      </div>
+    </a>
+
+    <a href="poker.html" class="project-link">
+      <div class="project-card">
+        <div class="project-info">
+          <h3>Poker Analyzer (Simulation)</h3>
+          <p>Developed a poker hand tracking and odds calculator using computer vision and probability simulation, designed for training scenarios.</p>
+        </div>
+        <div class="project-media">
+          <video src="poker_3.mp4" autoplay loop muted playsinline></video>
+        </div>
+      </div>
+    </a>
+
   </section>
 
   <section id="contact">
